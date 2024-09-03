@@ -1,0 +1,33 @@
+@import 'variavies.less';
+@import 'maps.less';
+
+@breakpointMobile: ~"(max-width: 767px)";
+@breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
+
+body{
+    background-color: #cores[backgroundColor];
+}
+
+picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 30px;
+    margin: 0 auto;
+
+    img{
+        width: 100px;
+        background-color: @corFundoImgDesktop;
+        border-radius: 30px;
+        padding: 30px;
+        
+        @media @breakpointTablet{
+            background-color: @corFundoImgTablet;
+        }
+
+        @media @breakpointMobile{
+            background-color: @corFundoImgMobile;
+        }
+    }
+}

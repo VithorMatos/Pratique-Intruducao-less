@@ -1,0 +1,27 @@
+body {
+  background-color: #561919;
+}
+picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 30px;
+  margin: 0 auto;
+}
+picture img {
+  width: 100px;
+  background-color: #00ff6a;
+  border-radius: 30px;
+  padding: 30px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  picture img {
+    background-color: #c8ff00;
+  }
+}
+@media (max-width: 767px) {
+  picture img {
+    background-color: #4400ff;
+  }
+}
